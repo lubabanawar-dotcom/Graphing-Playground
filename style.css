@@ -1,22 +1,133 @@
 body {
-  background-color: #121212;
-  color: white;
-  font-family: Arial;
-  padding: 30px;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    font-family: Arial;
+    overflow: hidden;
 }
 
-input {
-  padding: 10px;
-  width: 300px;
+#app {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 320px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+}
+
+#appTitle {
+
+    background-color: #2d2d2d;
+
+    padding: 15px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: cyan;
+
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
+
+}
+
+#equationList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.equationRow {
+
+    background-color: #252525;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.typeSelect,
+.equationInput {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+.removeButton {
+
+    background-color: crimson;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
 }
 
 button {
-  padding: 10px;
-  margin-left: 10px;
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
 }
+
+button:hover {
+
+    background-color: #444;
+
+}
+
 #box {
-    width: 800px;
-    height: 500px;
-    border: 1px solid gray;
-    margin-top: 20px;
+    flex: 1;
 }

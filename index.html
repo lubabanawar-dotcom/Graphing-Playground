@@ -9,7 +9,7 @@
 
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.2/math.min.js"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js">
   </script>
@@ -17,23 +17,33 @@
 </head>
 <body>
 
-  <h1>Graph Playground</h1>
+<div id="app">
 
-  <input type="text" id="equationInput" placeholder="Enter equation">
+    <div id="sidebar">
 
-  <button id="graphButton">
-    Graph
-  </button>
+        <div id="appTitle">
+        Graph Playground
+       </div>
 
-  <button id="clearButton">
-    Clear
-  </button>
+       <h2>Equations</h2>
 
-  <p id="outputText"></p>
-  
-  <div id="box"></div>
+        <div id="equationList"></div>
 
-  <script src="script.js"></script>
+        <button id="addEquationButton">
+            + Add Equation
+        </button>
+
+        <button id="clearButton">
+            Clear All
+        </button>
+
+    </div>
+
+    <div id="box"></div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
