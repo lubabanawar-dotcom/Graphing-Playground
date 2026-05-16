@@ -1,0 +1,22 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial;
+  padding: 30px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+}
+#box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
